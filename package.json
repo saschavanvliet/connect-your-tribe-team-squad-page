@@ -1,0 +1,24 @@
+{
+  "name": "connect-your-tribe-team-squad-page",
+  "version": "1.0.0",
+  "description": "Ontwerp en maak samen met je team een website met NodeJS, Express, JSON en Liquid",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fdnd-task/connect-your-tribe-team-squad-page.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fdnd-task/connect-your-tribe-team-squad-page/issues"
+  },
+  "homepage": "https://github.com/fdnd-task/connect-your-tribe-team-squad-page#readme",
+  "dependencies": {
+    "express": "^5.0.1",
+    "liquidjs": "^10.21.0"
+  }
+}
