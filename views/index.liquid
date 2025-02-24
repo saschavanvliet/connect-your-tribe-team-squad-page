@@ -20,3 +20,12 @@
   </label>
   <button type="submit">Verstuur</button>
 </form>
+
+<h2>Squads</h2>
+<ul>
+  {% for squad in squads %}
+    <li>
+      <a href="/squads" squad={{ squad.name }}">Squad {{ squad.name }}</a>
+    </li>
+  {% endfor %}
+</ul>

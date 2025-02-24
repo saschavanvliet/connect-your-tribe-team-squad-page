@@ -6,7 +6,6 @@ import { Liquid } from 'liquidjs';
 // Vul hier jullie team naam in
 const teamName = 'Cool';
 
-
 const app = express()
 
 app.use(express.static('public'))
@@ -23,10 +22,18 @@ app.get('/', async function (request, response) {
   const messagesResponse = await fetch(`https://fdnd.directus.app/items/messages/?filter={"for":"Team ${teamName}"}`)
   const messagesResponseJSON = await messagesResponse.json()
 
+  const squadResponse = await fetch('https://fdnd.directus.app/items/squad?filter={"_and":[{"cohort":"2425"},{"tribe":{"name":"FDND Jaar 1"}}]}')
+  const squadResponseJSON = await squadResponse.json()
+
   response.render('index.liquid', {
     teamName: teamName,
-    messages: messagesResponseJSON.data
+    messages: messagesResponseJSON.data,
+    squads: squadResponseJSON.data
   })
+})
+ 
+app.get('/squads/', async function (request, response) {
+  response.render('squads.liquid')
 })
 
 app.post('/', async function (request, response) {
@@ -44,7 +51,6 @@ app.post('/', async function (request, response) {
 
   response.redirect(303, '/')
 })
-
 
 app.set('port', process.env.PORT || 8000)
 
