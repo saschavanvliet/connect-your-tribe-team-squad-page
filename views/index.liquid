@@ -1,3 +1,5 @@
+{% render 'partials/head.liquid' %}
+
 <h1>Zet 'm op team {{ teamName }}!</h1>
 
 <h2>Huidige berichten</h2>
@@ -23,9 +25,10 @@
 
 <h2>Squads</h2>
 <ul>
-  {% for squad in squads %}
-    <li>
-      <a href="/squads" squad={{ squad.name }}">Squad {{ squad.name }}</a>
-    </li>
-  {% endfor %}
+      <li>
+        <a href="/squad1H/">Squad 1H</a>
+        <a href="/squad1G/">Squad 1G</a>
+      </li>
 </ul>
+
+{% render 'partials/foot.liquid' %}

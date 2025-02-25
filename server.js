@@ -32,8 +32,12 @@ app.get('/', async function (request, response) {
   })
 })
  
-app.get('/squads/', async function (request, response) {
-  response.render('squads.liquid')
+app.get('/squad1H/', async function (request, response) {
+  response.render('squad1H.liquid')
+})
+
+app.get('/squad1G/', async function (request, response) {
+  response.render('squad1G.liquid')
 })
 
 app.post('/', async function (request, response) {
