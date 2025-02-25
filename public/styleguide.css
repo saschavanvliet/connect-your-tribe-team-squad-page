@@ -1,0 +1,55 @@
+body {
+    /* Kleuren */
+        --header-background-color: rgb(143, 143, 245);
+        --primary-color-white: white;
+        --primary-color-black: black;
+        --background-color-main: rgb(197, 197, 249);
+        --footer-background-color: #E7E6DE;
+    
+        --border-color: black;
+    
+    /* Typografie */
+        --normal-text-size: 16px;
+        --font-size-header-s: 20px;
+        --font-size-header-m: 34px;
+        --font-size-header-l: 40px;
+    
+        --line-height-header: 110%;
+    
+        --font-family-bold: "Times New Roman-bold";
+        --font-family-black: "Times New Roman-black";
+        --font-family-normal: "Times New Roman";
+        --font-family-italic: "Times New Roman-italic";
+    
+        --letter-spacing: 0%; 
+    }
+     
+    h1 {
+        font-family: var(--font-family-black);
+        font-size: var(--font-size-header-l);
+        line-height: var(--line-height-text);
+        letter-spacing: var(--letter-spacing);
+    }
+    
+    h2 {
+        font-family: var(--font-family-black);
+        font-size: var(--font-size-header-m);
+        line-height: var(--line-height-text);
+        letter-spacing: var(--letter-spacing);
+    }
+    
+    h3 {
+        font-family: var(--font-family-bold);
+        font-size: var(--font-size-header-s);
+        line-height: var(--line-height-text); 
+        letter-spacing: var(--letter-spacing);
+    }
+
+    h1, h2, h3, a {
+        color: var(--primary-color-black)
+    }
+
+    a {
+        font-size: var(--normal-text-size);
+        text-decoration: none;
+    }
