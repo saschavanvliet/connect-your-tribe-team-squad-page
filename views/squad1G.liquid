@@ -16,16 +16,20 @@
 </nav>
 
 <body>
-
-    <article class="profilecards" id="profilecards">
+    <div class="profilecards-container" id="profilecards">
         {% for person in persons %}
-        <a href="/student/{{ person.id }}">
-            <img src=" {{ person.avatar }} " alt="leeg" {{ person.name }} height="300px" width="200px"
-                style="border:10px solid {{person.fav_color}}">
-            <button class="like-button" id="like-button">
-                &#x2764;&#xfe0f;</button>
-        </a>
+        <div class="profilecards">
+            <a href="/student/{{ person.id }}">
+                <p>{{ person.name }} {{ person.id }}</p>
+                <img src=" {{ person.avatar }} " alt="leeg" height="250px" width="200px"
+                    style="border:10px solid {{person.fav_color}}">
+                <div class="like-button-container">
+                    <button class="like-button" id="like-button">
+                        &#x2764;&#xfe0f;</button>
+                </div>
+            </a>
+        </div>
         {% endfor %}
-    </article>
+    </div>
 
     {% render 'partials/foot.liquid' %}

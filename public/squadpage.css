@@ -5,7 +5,7 @@
     right: 0;
     width: 20%;
     height: 100%;
-    background-color: rgba(150, 155, 147, 0.92);
+    background-color: var(--primary-color-black);
     transform: translateX(100%);
     transition: transform 0.4s ease-in-out;
     z-index: 9;
@@ -26,7 +26,7 @@
 
     ul li a {
         text-decoration: none;
-        color: #ffe600;
+        color: var(--background-color-main);
         font-size: calc(1rem + 2vw);
         transition: color 0.3s;
     }
@@ -37,7 +37,7 @@
 }
 
 .menu ul li a:hover {
-    color: #1d490b;
+    color: var(--primary-color-white);
 }
 
 /* Hamburger Menu */
@@ -46,11 +46,39 @@
     top: 20px;
     right: 20px;
     font-size: 30px;
-    color: #000000;
+    color: var(--background-color-main);
     z-index: 10;
     border: none;
     background: none;
     cursor: pointer;
     margin: 0;
     padding: 0;
+}
+
+.profilecards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+
+
+    .profilecards {
+        border: 2px solid black;
+        border-radius: 20px;
+        padding: 1em;
+
+        p {
+            border-bottom: 2px solid black;
+
+        }
+
+        img {
+            left: 50%;
+        }
+
+        .like-button-container {
+            border-top: 2px solid black;
+        }
+    }
 }
