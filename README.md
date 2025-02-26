@@ -1,3 +1,12 @@
+### FDND team filter
+
+### Beschrijving
+
+### Kenmerken
+
+### Installatie
+
+
 # Squad Page
 Ontwerp en maak samen met je team een website met NodeJS, Express, JSON en Liquid
 
@@ -8,6 +17,7 @@ Ontwerp en maak samen met je team een website met NodeJS, Express, JSON en Liqui
 - Je geeft jezelf een start en een eind datum bij je issue
 ### Canvas
 <img src="https://github.com/user-attachments/assets/f9d3510d-0879-4f83-b3ae-81f553a6bc98">
+
 
 ## Standup 26 februari 2025
 Op 26 februari hadden we een standup met alle leden van het team. Er zijn een aantal punten besproken die ik nu zal noteren van elk teamlid.
