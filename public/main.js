@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Open of sluit het menu wanneer op het icoon wordt geklikt
     hamburger.addEventListener('click', (event) => {
         menu.classList.toggle('open');
+        hamburger.classList.toggle('open');
         event.stopPropagation(); // Voorkomt dat de klik ook het document-event triggert
     });
 
