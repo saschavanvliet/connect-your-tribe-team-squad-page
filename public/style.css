@@ -1,5 +1,24 @@
-button {
+body {
+    background-color: (--background-color-main);
+}
+
+h2 {
+    font-family: var(--font-family-website);
+    display: flex;
+    justify-content: center;
+}
+
+.squad-card {
+    border:2px solid;
+    border-color: var(--border-color);
+    border-radius: 20px;
+    padding: 1em;       
+}
+
+.hartje {
     background-color: transparent;
     border-color: transparent;
+    
 }
+
 

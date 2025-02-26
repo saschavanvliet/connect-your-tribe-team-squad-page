@@ -16,11 +16,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-document.getElementById("like").addEventListener("click", function(){
+document.getElementById("like_h").addEventListener("click", function(){
     // Selecteer het like count element
-    const likeCount = document.getElementById("like-count");
+    const likeCount = document.getElementById("like-count_h");
     
     // huidige tekst vervangen met optelsom 
-    // parseInt = zet text om naar cijfers
+    // parseInt = zet tekst om naar cijfers
+    likeCount.textContent = parseInt(likeCount.textContent) +1;
+})
+
+document.getElementById("like_g").addEventListener("click", function(){
+    // Selecteer het like count element
+    const likeCount = document.getElementById("like-count_g");
+    
+    // huidige tekst vervangen met optelsom 
+    // parseInt = zet tekst om naar cijfers
     likeCount.textContent = parseInt(likeCount.textContent) +1;
 })
