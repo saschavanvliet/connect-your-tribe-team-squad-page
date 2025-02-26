@@ -7,13 +7,24 @@ Ontwerp en maak samen met je team een website met NodeJS, Express, JSON en Liqui
 
 ## Kenmerken
 
-## Installatie
+  ### Safae:
 
+  ### Renzo:
+
+  ### Sascha:
+
+  ### Sidney:
+
+## Installatie
+In ons project hebben nu gewerkt met nieuwe concepten. We hebben gewerkt met: Express, Node, Liquid en Render.
+
+- Om ons project te bekijken EN te bewerken heb je dit nodig om aan de slag te gaan. Laten we eerst beginnen met Node.js. Node is een software die je helpt met een server opzetten zodat je zelf kan testen op je eigen lokale server. <a href="https://nodejs.org/en">Node.js</a>
 
 ## Teamafspraken
 - Goed communiceren via Teams. Als je aan iets gaat werken waar anderen ook aan werken, communiceer je dat!
 - Iedereen die een issue aanmaakt bespreekt het en 'assigned' iemand of zichzelf aan die issue.
 - Je geeft jezelf een start en een eind datum bij je issue
+
 ### Canvas
 <img src="https://github.com/user-attachments/assets/f9d3510d-0879-4f83-b3ae-81f553a6bc98">
 
