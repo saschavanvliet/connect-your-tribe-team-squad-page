@@ -27,13 +27,17 @@
     ul li a {
         text-decoration: none;
         color: var(--background-color-main);
-        font-size: calc(1rem + 2vw);
+        font-size: var(--normal-text-size);
         transition: color 0.3s;
     }
 }
 
 .menu.open {
     transform: translateX(0);
+
+    .hamburger-button {
+        color: var(--background-color-main);
+    }
 }
 
 .menu ul li a:hover {
@@ -46,13 +50,17 @@
     top: 20px;
     right: 20px;
     font-size: 30px;
-    color: var(--background-color-main);
+    color: var(--primary-color-black);
     z-index: 10;
     border: none;
     background: none;
     cursor: pointer;
     margin: 0;
     padding: 0;
+}
+
+.hamburger-button.open {
+    color: var(--background-color-main);
 }
 
 .profilecards-container {
