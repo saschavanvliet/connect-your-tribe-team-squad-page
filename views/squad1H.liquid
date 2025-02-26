@@ -1,11 +1,12 @@
 {% render 'partials/head.liquid' %}
 
+
+
+<button type="button" class="hamburger-button" id="hamburger-button">
+    &#9776;
+</button>
+
 <nav class="menu" id="menu">
-
-    <button type="button" class="hamburger-button" id="hamburger-button">
-        &#9776;
-    </button>
-
     <ul>
         <li><a href="../squad-1h:Blaze">Blaze</a></li>
         <li><a href="../squad-1h:Cool">Cool</a></li>
@@ -20,7 +21,8 @@
     <article class="profilecards" id="profilecards">
         {% for person in persons %}
         <a href="/student/{{ person.id }}">
-            <img src=" {{ person.avatar }} " alt="leeg" {{ person.name }} height="300px" width="200px"
+            <p>{{ person.name }}</p>
+            <img src=" {{ person.avatar }} " alt="leeg" height="300px" width="200px"
                 style="border:10px solid {{person.fav_color}}">
             <button class="like-button" id="like-button">
                 &#x2764;&#xfe0f;</button>
@@ -28,4 +30,4 @@
         {% endfor %}
     </article>
 
-{% render 'partials/foot.liquid' %}
+    {% render 'partials/foot.liquid' %}
