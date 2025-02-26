@@ -16,40 +16,51 @@ body {
     
         --line-height-header: 110%;
     
-        --font-family-bold: "Times New Roman-bold";
-        --font-family-black: "Times New Roman-black";
-        --font-family-normal: "Times New Roman";
-        --font-family-italic: "Times New Roman-italic";
-    
+        --font-family-website: "Open Sans", sans-serif;
+
+        --font-weight-normal: 400;
+        --font-weight-bold: 700;
+        --font-weight-black: 900;
+        --font-style: italic;
+        
         --letter-spacing: 0%; 
+    }
+
+    body {
+        background: var(--background-color-main);
     }
      
     h1 {
-        font-family: var(--font-family-black);
+        font-family: var(--font-family-website);
         font-size: var(--font-size-header-l);
         line-height: var(--line-height-text);
         letter-spacing: var(--letter-spacing);
+        font-weight: var(--font-weight-black);
     }
     
     h2 {
-        font-family: var(--font-family-black);
+        font-family: var(--font-family-website);
         font-size: var(--font-size-header-m);
         line-height: var(--line-height-text);
         letter-spacing: var(--letter-spacing);
+        font-weight: var(--font-weight-bold);
     }
     
     h3 {
-        font-family: var(--font-family-bold);
+        font-family: var(--font-family-website);
         font-size: var(--font-size-header-s);
         line-height: var(--line-height-text); 
         letter-spacing: var(--letter-spacing);
+        font-weight: var(--font-weight-bold);
     }
 
     h1, h2, h3, a {
         color: var(--primary-color-black)
     }
 
-    a {
+    p, a {
+        font-family: var(--font-family-website);
         font-size: var(--normal-text-size);
         text-decoration: none;
+        font-weight: var(--font-weight-normal);
     }
