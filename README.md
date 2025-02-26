@@ -23,7 +23,7 @@ In ons project hebben nu gewerkt met nieuwe concepten. We hebben gewerkt met: No
 - NPM is een zogehete 'package manager.' Node werkt mooi op je code, maar het heeft een aantal standaard code nodig om te kunnen werken. Dit kan wat rommelig overkomen in je bestanden en dus moeilijk voor Node om het allemaal te vinden. Gelukkig is NPM hier. NPM zorgt er dus voor dat alle bestanden mooi in een pakketje worden gezet en worden ge'managed' zodat alles netjes gedownload kan worden (NPM staat daarom ook voor Node Package Manager.) Met NPM kan je een aantal commandos in je terminal (Gebruik ctrl+` om je terminal te openen) voeren zodat je Node op de juiste manier kan gebruiken. Als je de terminal hebt geopend voer je eerst <code>npm install</code> in zodat de juiste code wordt gewdownload in je bestand. Als je het juist heb gedaan zie je dit: <img src="https://github.com/user-attachments/assets/621dee36-4850-414b-b1b9-1187c6083405">.
 Als dit éénmaal is geïnstalleerd toets je in de terminal <code>npm start</code> zodat de lokale server wordt gestart. Als je dit heb ingevuld zie je nu dit: <img src="https://github.com/user-attachments/assets/702d364a-2abe-4ae0-a9c9-5ea932e809fb">. Nu kan je vrij alles veranderen en in je lokale server werken. Sluit wel altijd je server af als je in het server bestand hebt gewerkt OF als je er niet meer verder aan gaat werken. Sluiten doe je door ctrl+c in te drukken bij je terminal, zo sluit je de lokale host weer af en krijg je nu een error-pagina.
 
-- Express
+- Express. Hoe je express <a href="https://expressjs.com/en/starter/installing.html">download</a> zie je hier.  
 
 - Liquid
 
