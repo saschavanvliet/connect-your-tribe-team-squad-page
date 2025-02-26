@@ -31,13 +31,22 @@ app.get('/', async function (request, response) {
     squads: squadResponseJSON.data
   })
 })
- 
+
+// Ik maak een API-variabele aan om makkelijker aan de slag te kunnen gaan.
+const API =  'https://fdnd.directus.app/items/person/'
+
 app.get('/squad1H/', async function (request, response) {
-  response.render('squad1H.liquid')
+  const personResponse = await fetch(API + '?fields=*,squads.squad_id.name&filter={"squads":{"squad_id":{"name":"1H"}}}&sort=name')
+  // En daarvan haal ik de JSON op
+  const personResponseJSON = await personResponse.json()
+  response.render('squad1H.liquid', {persons: personResponseJSON.data})
 })
 
 app.get('/squad1G/', async function (request, response) {
-  response.render('squad1G.liquid')
+  const personResponse = await fetch(API + '?fields=*,squads.squad_id.name&filter={"squads":{"squad_id":{"name":"1H"}}}&sort=name')
+  // En daarvan haal ik de JSON op
+  const personResponseJSON = await personResponse.json()
+  response.render('squad1H.liquid', {persons: personResponseJSON.data})
 })
 
 app.post('/', async function (request, response) {
