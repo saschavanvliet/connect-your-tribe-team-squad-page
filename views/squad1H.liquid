@@ -27,14 +27,21 @@
                 <p><span class="title">{{ person.name }} {{ person.id }}</span></p>
 
                 <div class="img-container">
-                    {% if person.avatar  %}
-                        <img src=" {{ person.avatar }} " alt="leeg" height="250px" width="200px"
-                            style="border:10px solid {{person.fav_color}}">
+                    {% if person.avatar %}
+                    <img src=" {{ person.avatar }} " alt="leeg" height="250px" width="200px"
+                        style="border:10px solid {{person.fav_color}}">
+
+                    {% if person.avatar == nil %}
+                    <img class="img-placeholder" src="/images/placeholder.jpg" alt="leeg" height="250px" width="200px"
+                        style="border:10px solid {{person.fav_color}}">
+                    {% endif %}
+
                     {% else %}
-                        <img class="img-placeholder" src="/images/placeholder.jpg" alt="leeg" height="250px" width="200px"
+                    <img class="img-placeholder" src="/images/placeholder.jpg" alt="leeg" height="250px" width="200px"
                         style="border:10px solid {{person.fav_color}}">
                     {% endif %}
                 </div>
+                
                 <div class="like-button-container">
                     <button class="like-button" id="like-button">
                         &#x2764;&#xfe0f;</button>
