@@ -46,7 +46,7 @@ app.get('/squad1G/', async function (request, response) {
   const personResponse = await fetch(API + '?fields=*,squads.squad_id.name&filter={"squads":{"squad_id":{"name":"1G"}}}&sort=name')
   // En daarvan haal ik de JSON op
   const personResponseJSON = await personResponse.json()
-  response.render('squad1H.liquid', {persons: personResponseJSON.data})
+  response.render('squad1G.liquid', {persons: personResponseJSON.data})
 })
 
 app.post('/', async function (request, response) {
