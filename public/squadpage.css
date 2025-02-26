@@ -99,6 +99,8 @@
 
             .like-button {
                 padding-left: 1rem;
+                background: none;
+                border: none;
             }
         }
     }
