@@ -16,9 +16,10 @@ Ontwerp en maak samen met je team een website met NodeJS, Express, JSON en Liqui
   ### Sidney:
 
 ## Installatie
-In ons project hebben nu gewerkt met nieuwe concepten. We hebben gewerkt met: Express, Node, Liquid en Render.
+In ons project hebben nu gewerkt met nieuwe concepten. We hebben gewerkt met: Node, NPM, Express, Liquid en Render.
 
-- Om ons project te bekijken EN te bewerken heb je dit nodig om aan de slag te gaan. Laten we eerst beginnen met Node.js. Node is een software die je helpt met een server opzetten zodat je zelf kan testen op je eigen lokale server. <a href="https://nodejs.org/en">Node.js</a>
+- Om ons project te bekijken EN te bewerken heb je dit nodig om aan de slag te gaan. Laten we eerst beginnen met Node.js. Node is een software die je helpt met een server opzetten zodat je zelf kan testen op je eigen lokale server. <a href="https://nodejs.org/en">Node.js</a> is vanaf hier te downloaden en na installeren van Node.js begint een ander deel zich voort te doen.
+- NPM is een zogehete 'package manager.' Node werkt mooi op je code, maar het heeft een aantal standaard code nodig om te kunnen werken. Dit kan wat rommelig overkomen in je bestanden en dus moeilijk voor Node om het allemaal te vinden. Gelukkig is NPM hier. NPM zorgt er dus voor dat alle bestanden mooi in een pakketje worden gezet en worden ge'managed' zodat alles netjes gedownload kan worden (NPM staat daarom ook voor Node Package Manager.) Met NPM kan je een aantal commandos in je terminal (Gebruik ctrl+` om je terminal te openen) voeren zodat je Node op de juiste manier kan gebruiken. Als je de terminal hebt geopend voer je eerst <code>npm install</code>
 
 ## Teamafspraken
 - Goed communiceren via Teams. Als je aan iets gaat werken waar anderen ook aan werken, communiceer je dat!
