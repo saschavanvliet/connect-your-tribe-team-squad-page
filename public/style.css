@@ -1,5 +1,7 @@
 body {
     background-color: (--background-color-main);
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
 }
 
 h2 {
@@ -8,17 +10,56 @@ h2 {
     justify-content: center;
 }
 
-.squad-card {
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1em;
+}
+
+.squad-h, .squad-g {
     border:2px solid;
     border-color: var(--border-color);
     border-radius: 20px;
     padding: 1em;       
+    background-color: white;
+    width: 400px;
+    height: 400px;
+
+}
+
+.squad-g {
+    background-image: url(./koop.avatar.jpg);
+}
+
+.squad-h {
+    background-image: url(./krijn.avatar.jpg);
 }
 
 .hartje {
     background-color: transparent;
     border-color: transparent;
-    
+}
+
+.hartje svg {
+    animation: hartje;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes hartje {
+    0% {
+      fill: transparent;
+    }
+    100% {
+      fill: #d75a4a;
+    }
+  }
+
+.view-all {
+    border:2px solid;
+    border-radius: 20px;
+    background-color: var(--primary-button-color);
+    padding: 1em;
 }
 
 
