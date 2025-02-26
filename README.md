@@ -21,9 +21,9 @@ In ons project hebben nu gewerkt met nieuwe concepten. We hebben gewerkt met: No
 - Om ons project te bekijken EN te bewerken heb je dit nodig om aan de slag te gaan. Laten we eerst beginnen met Node.js. Node is een software die je helpt met een server opzetten zodat je zelf kan testen op je eigen lokale server. <a href="https://nodejs.org/en">Node.js</a> is vanaf hier te downloaden en na installeren van Node.js begint een ander deel zich voort te doen.
 
 - NPM is een zogehete 'package manager.' NPM zorgt er dus voor dat alle bestanden mooi in een pakketje worden gezet en worden ge'managed' zodat alles netjes gedownload kan worden (NPM staat daarom ook voor Node Package Manager.) Met NPM kan je een aantal commandos in je terminal (Gebruik ctrl+` om je terminal te openen) voeren zodat je Node op de juiste manier kan gebruiken. 
- . Gebruik <code>npm init</code> zodat er een pakketje wordt gemaakt van je applicatie.
- . Nadat je applicatie een pakketje is geworden gebruik je <code>npm install</code> om je pakketje te kunnen installeren
- . Als je pakketje is geïnstalleerd gebruik je <code>npm start</code> om je huidige applicatie uit te voeren. Nu kan je lokaal je eigen server hosten.
+  Gebruik <code>npm init</code> zodat er een pakketje wordt gemaakt van je applicatie.
+  Nadat je applicatie een pakketje is geworden gebruik je <code>npm install</code> om je pakketje te kunnen installeren
+  Als je pakketje is geïnstalleerd gebruik je <code>npm start</code> om je huidige applicatie uit te voeren. Nu kan je lokaal je eigen server hosten.
 - Express. Hoe je express <a href="https://expressjs.com/en/starter/installing.html">download</a> zie je hier.  
 
 - Liquid
