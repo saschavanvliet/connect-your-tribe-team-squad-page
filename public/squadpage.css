@@ -27,7 +27,7 @@
     ul li a {
         text-decoration: none;
         color: var(--background-color-main);
-        font-size: calc(1rem + 2vw);
+        font-size: var(--normal-text-size);
         transition: color 0.3s;
     }
 }
