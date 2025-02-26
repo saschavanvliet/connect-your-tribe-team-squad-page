@@ -24,7 +24,8 @@ In ons project hebben nu gewerkt met nieuwe concepten. We hebben gewerkt met: No
   Gebruik <code>npm init</code> zodat er een pakketje wordt gemaakt van je applicatie (nu is er een package.json aangemaakt.)
   Nadat je applicatie een pakketje is geworden gebruik je <code>npm install</code> om je pakketje te kunnen installeren. 
   Als je pakketje is geïnstalleerd gebruik je <code>npm start</code> om je huidige applicatie uit te voeren. Nu kan je lokaal je eigen server hosten.
-- Express. Hoe je express <a href="https://expressjs.com/en/starter/installing.html">download</a> zie je hier.  
+
+- Express. Hoe je express <a href="https://expressjs.com/en/starter/installing.html">download</a> zie je hier. Express zorgt ervoor dat je een behapbare API applicatie kan maken en hoe je het installeert heb je net gedaan bij de npm init. Met express kan je gemakkelijk <a href="https://expressjs.com/en/guide/routing.html">routes</a> maken en geleiden naar andere pagina's. 
 
 - Liquid
 
