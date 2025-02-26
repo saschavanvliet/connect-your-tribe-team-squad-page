@@ -1,14 +1,13 @@
-### FDND team filter
-
-### Beschrijving
-
-### Kenmerken
-
-### Installatie
-
-
 # Squad Page
 Ontwerp en maak samen met je team een website met NodeJS, Express, JSON en Liquid
+
+## FDND team filter
+
+## Beschrijving
+
+## Kenmerken
+
+## Installatie
 
 
 ## Teamafspraken
