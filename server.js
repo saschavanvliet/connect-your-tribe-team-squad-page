@@ -77,5 +77,12 @@ if (teamName == '') {
   const personDetailResponse = await fetch('https://fdnd.directus.app/items/person/' + request.params.id)
   const personDetailResponseJSON = await personDetailResponse.json()
  
+  
+
+  app.get('/detail:id', async function (request, response) {
+    const personDetailResponse = await fetch('https://fdnd.directus.app/items/person/' + request.params.id)
+    const personDetailResponseJSON = await personDetailResponse.json()
+    const squadResponseJSON = await squadResponseJSON.json()
+
   response.render('detail_student.liquid', {person: personDetailResponseJSON.data, squads: squadResponseJSON.data})
 })
