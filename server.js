@@ -64,4 +64,9 @@ if (teamName == '') {
   app.listen(app.get('port'), function () {
     console.log(`Application started on http://localhost:${app.get('port')}`)
   })
-}
+}app.get('/detail', async function (request, response) {
+  const personDetailResponse = await fetch('https://fdnd.directus.app/items/person/' + request.params.id)
+  const personDetailResponseJSON = await personDetailResponse.json()
+ 
+  response.render('detail_student.liquid', {person: personDetailResponseJSON.data, squads: squadResponseJSON.data})
+})
