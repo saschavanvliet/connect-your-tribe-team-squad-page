@@ -1,0 +1,44 @@
+{% render 'partials/head.liquid' %}
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squad 1G</title>
+</head>
+
+<nav class="menu" id="menu">
+    <h1>FDND - Leerjaar 1 - Squad 1G</h1>
+
+    <button type="button" class="hamburger-button" id="hamburger-button">
+        &#9776;
+    </button>
+
+    <ul>
+        <li><a href="../squad-1h:Flex">Flex</a></li>
+        <li><a href="../squad-1h:Hype">Hype</a></li>
+        <li><a href="../squad-1h:Peak">Peak</a></li>
+        <li><a href="../squad-1h:Storm">Storm</a></li>
+        <li><a href="../squad-1h:Flux">Flux</a></li>
+        <li><a href="../squad-1h:Epic">Epic</a></li>
+    </ul>
+</nav>
+
+<body>
+
+<article class="profilecards" id="profilecards">
+    {% for person in persons %}
+    <a href="/student/{{ person.id }}">
+        <img src=" {{ person.avatar }} " alt="leeg" {{ person.name }} height="300px" width="200px"
+            style="border:10px solid {{person.fav_color}}">
+        <button class="like-button" id="like-button">
+            &#x2764;&#xfe0f;</button>
+    </a>
+    {% endfor %}
+</article>
+        
+</body>
+</html>
+
+{% render 'partials/foot.liquid' %}
