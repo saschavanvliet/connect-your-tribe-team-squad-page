@@ -3,7 +3,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    width: 20%;
+    width: 100%;
     height: 100%;
     background-color: var(--primary-color-black);
     transform: translateX(100%);
@@ -73,12 +73,19 @@
 
     .profilecards {
         border: 2px solid black;
-        border-radius: 20px;
+        border-radius: 20px;        
         padding: 1em;
+        background-color: var(--primary-color-white);
 
         p {
             border-bottom: 2px solid black;
+            margin-left: -1rem;
+            margin-right: -1rem;
 
+        }
+
+        .title {
+            padding-left: 1rem;
         }
 
         img {
@@ -87,6 +94,12 @@
 
         .like-button-container {
             border-top: 2px solid black;
+            margin-left: -1rem;
+            margin-right: -1rem;
+
+            .like-button {
+                padding-left: 1rem;
+            }
         }
     }
 }

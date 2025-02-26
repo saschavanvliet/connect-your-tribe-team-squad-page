@@ -1,6 +1,8 @@
 {% render 'partials/head.liquid' %}
 
-<header><h1>FDND - LEERJAAR 1 - SQUAD 1G</h1></header>
+<header>
+    <h1>FDND - LEERJAAR 1 - SQUAD 1G</h1>
+</header>
 
 
 <button type="button" class="hamburger-button" id="hamburger-button">
@@ -23,9 +25,17 @@
         {% for person in persons %}
         <div class="profilecards">
             <a href="/student/{{ person.id }}">
-                <p>{{ person.name }} {{ person.id }}</p>
-                <img src=" {{ person.avatar }} " alt="leeg" height="250px" width="200px"
-                    style="border:10px solid {{person.fav_color}}">
+                <p><span class="title">{{ person.name }} {{ person.id }}</span></p>
+
+                <div class="img-container">
+                    {% if person.avatar  %}
+                        <img src=" {{ person.avatar }} " alt="leeg" height="250px" width="200px"
+                            style="border:10px solid {{person.fav_color}}">
+                    {% else %}
+                        <img class="img-placeholder" src="/images/placeholder.jpg" alt="leeg" height="250px" width="200px"
+                        style="border:10px solid {{person.fav_color}}">
+                    {% endif %}
+                </div>
                 <div class="like-button-container">
                     <button class="like-button" id="like-button">
                         &#x2764;&#xfe0f;</button>
@@ -35,4 +45,8 @@
         {% endfor %}
     </div>
 
+
+    <style>
+
+    </style>
     {% render 'partials/foot.liquid' %}
