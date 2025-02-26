@@ -1,10 +1,10 @@
 body {
     /* Kleuren */
-        --header-background-color: rgb(143, 143, 245);
-        --primary-color-white: white;
-        --primary-color-black: black;
-        --background-color-main: rgb(197, 197, 249);
-        --footer-background-color: #E7E6DE;
+        --primary-color-white: #ECECEC;
+        --primary-color-black: #050542;
+        --background-color-main: #A675F4;
+        --primary-button-color: #67E5BF;
+        --secondary-button-color: #FEFC86;
     
         --border-color: black;
     

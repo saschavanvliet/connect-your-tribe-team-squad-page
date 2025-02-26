@@ -1,10 +1,10 @@
 {% render 'partials/head.liquid' %}
 
-<nav class="menu" id="menu">
-    <button type="button" class="hamburger-button" id="hamburger-button">
-        &#9776;
-    </button>
+<button type="button" class="hamburger-button" id="hamburger-button">
+    &#9776;
+</button>
 
+<nav class="menu" id="menu">
     <ul>
         <li><a href="../squad-1h:Flex">Flex</a></li>
         <li><a href="../squad-1h:Hype">Hype</a></li>
@@ -17,15 +17,15 @@
 
 <body>
 
-<article class="profilecards" id="profilecards">
-    {% for person in persons %}
-    <a href="/student/{{ person.id }}">
-        <img src=" {{ person.avatar }} " alt="leeg" {{ person.name }} height="300px" width="200px"
-            style="border:10px solid {{person.fav_color}}">
-        <button class="like-button" id="like-button">
-            &#x2764;&#xfe0f;</button>
-    </a>
-    {% endfor %}
-</article>
-        
-{% render 'partials/foot.liquid' %}
+    <article class="profilecards" id="profilecards">
+        {% for person in persons %}
+        <a href="/student/{{ person.id }}">
+            <img src=" {{ person.avatar }} " alt="leeg" {{ person.name }} height="300px" width="200px"
+                style="border:10px solid {{person.fav_color}}">
+            <button class="like-button" id="like-button">
+                &#x2764;&#xfe0f;</button>
+        </a>
+        {% endfor %}
+    </article>
+
+    {% render 'partials/foot.liquid' %}

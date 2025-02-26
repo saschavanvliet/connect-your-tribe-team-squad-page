@@ -43,7 +43,7 @@ app.get('/squad1H/', async function (request, response) {
 })
 
 app.get('/squad1G/', async function (request, response) {
-  const personResponse = await fetch(API + '?fields=*,squads.squad_id.name&filter={"squads":{"squad_id":{"name":"1H"}}}&sort=name')
+  const personResponse = await fetch(API + '?fields=*,squads.squad_id.name&filter={"squads":{"squad_id":{"name":"1G"}}}&sort=name')
   // En daarvan haal ik de JSON op
   const personResponseJSON = await personResponse.json()
   response.render('squad1H.liquid', {persons: personResponseJSON.data})
@@ -67,15 +67,15 @@ app.post('/', async function (request, response) {
 
 app.set('port', process.env.PORT || 8000)
 
-if (teamName == '') {
-  console.log('Voeg eerst de naam van jullie team in de code toe.')
-} else {
   app.listen(app.get('port'), function () {
     console.log(`Application started on http://localhost:${app.get('port')}`)
   })
-}app.get('/detail', async function (request, response) {
-  const personDetailResponse = await fetch('https://fdnd.directus.app/items/person/' + request.params.id)
-  const personDetailResponseJSON = await personDetailResponse.json()
- 
-  response.render('detail_student.liquid', {person: personDetailResponseJSON.data, squads: squadResponseJSON.data})
-})
+  
+
+//   app.get('/detail:id', async function (request, response) {
+//     const personDetailResponse = await fetch('https://fdnd.directus.app/items/person/' + request.params.id)
+//     const personDetailResponseJSON = await personDetailResponse.json()
+//     const squadResponseJSON = await squadResponseJSON.json()
+
+//   response.render('detail_student.liquid', {person: personDetailResponseJSON.data, squads: squadResponseJSON.data})
+// })
