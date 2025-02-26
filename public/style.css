@@ -1,0 +1,18 @@
+.hartje {
+    display: none;
+  }
+  
+  .hartje:checked + .icone > svg {
+    animation: hartje;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes hartje {
+    0% {
+      fill: transparent;
+    }
+    100% {
+      fill: #d75a4a;
+    }
+  }
