@@ -49,6 +49,20 @@ app.get('/squad1G/', async function (request, response) {
   response.render('squad1G.liquid', {persons: personResponseJSON.data})
 })
 
+app.get('/teams/:team', async function (request, response) {
+  const personResponse = await fetch(API + 'https://fdnd.directus.app/items/person/?filter={"team":{"_contains":"' + request.params.team + '"}}')
+  // En daarvan haal ik de JSON op
+  const personResponseJSON = await personResponse.json()
+  response.render('teams.liquid', {persons: personResponseJSON.data})
+})
+
+app.get('/teamleden/', async function (request, response) {
+  const personResponse = await fetch(API + 'https://fdnd.directus.app/items/person/?filter={"team":{"_contains":"' + request.params.team + '"}}')
+  // En daarvan haal ik de JSON op
+  const personResponseJSON = await personResponse.json()
+  response.render('teamleden.liquid', {persons: personResponseJSON.data})
+})
+
 app.post('/', async function (request, response) {
   await fetch('https://fdnd.directus.app/items/messages/', {
     method: 'POST',
