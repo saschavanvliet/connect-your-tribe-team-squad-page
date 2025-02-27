@@ -31,7 +31,7 @@
                     <img src=" {{ person.avatar }} " alt="leeg" height="250px" width="200px"
                         style="border:10px solid {{person.fav_color}}">
 
-                    {% if person.avatar == nil %}
+                    {% if page.var.blank? %}
                     <img class="img-placeholder" src="/images/placeholder.jpg" alt="leeg" height="250px" width="200px"
                         style="border:10px solid {{person.fav_color}}">
                     {% endif %}
