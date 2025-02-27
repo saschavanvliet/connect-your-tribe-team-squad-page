@@ -70,6 +70,23 @@ app.set('port', process.env.PORT || 8000)
   app.listen(app.get('port'), function () {
     console.log(`Application started on http://localhost:${app.get('port')}`)
   })
+
+  // De links naar alle teampagina's gaan hier staan
+  app.get('/teams/:team', async function (request, response) {
+    console.log(request.params.team)
+  
+    const teamResponse = await fetch ('https://fdnd.directus.app/items/person/?filter={"team":{"_contains":"' + request.params.team + '"}}')
+    const teamResponseJSON = await teamResponse.json()
+  
+    console.log(teamResponseJSON)
+  
+    // Als de data 'leeg', laat dan een andere pagina zien...
+    if (teamResponseJSON.data.length == 0) {
+  
+    } else 
+      response.render('teamleden.liquid', {persons: teamResponseJSON.data, squads: squadResponseJSON.data, team_name: request.params.team})
+  })
+  
   
 
 //   app.get('/detail:id', async function (request, response) {
