@@ -86,7 +86,7 @@ header {
 
     .profilecards {
         border: 2px solid var(--primary-button-color);
-        border-radius: 20px;        
+        border-radius: 20px;
         padding: 1em;
         background-color: var(--primary-color-black);
 
@@ -117,5 +117,20 @@ header {
                 border: none;
             }
         }
+    }
+}
+
+.back-button-container {
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+
+    a {
+        border: 2px solid var(--primary-color-black);
+        border-radius: 20px;
+        background-color: var(--primary-button-color);
+        padding: 1em;
+        width: 8em;
+        text-align: center;
     }
 }
