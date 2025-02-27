@@ -27,6 +27,12 @@ Ontwerp en maak samen met je team een website met NodeJS, Express, JSON en Liqui
   
   Ook heb ik er voor gezorgd dat als een student geen avatar heeft dat er dan een placeholder image daarvoor in de plaats kwam. Dit heb ik gedaan met:
   https://github.com/saschavanvliet/connect-your-tribe-team-squad-page/blob/dcd6c8d82fd3696f2847a4618cb96716c37db328/views/squad1H.liquid#L29-L40
+
+  Hier zie je dus dat als een student geen avatar heeft, een verkeerde waarde heeft ingevuld of dat deze om een andere reden de avatar niet laat zien, de placeholder in de plaats komt.
+
+
+  #### Server.js
+  Om de pagina's te gebruiken en live te zetten moesten er nieuwe routes aangemaakt worden in de server. Dit is gedaan met 'app.get'
   
   
   
