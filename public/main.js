@@ -51,3 +51,5 @@ function geklikt(event) {
     // Voeg clicked toe om hart te vullen
     likeButton.classList.add('clicked');
 }
+
+
