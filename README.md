@@ -5,6 +5,36 @@ Ontwerp en maak samen met je team een website met NodeJS, Express, JSON en Liqui
 
 ## Beschrijving
 
+  ### Safae:
+
+  ### Renzo:
+
+  #### Beschrijving werkzaamheden
+  Voor deze opdracht heb ik de taak opgenomen om met de squad pagina's aan de gang te gaan. Deze ga ik samen met Sascha bouwen en hebben we onderling de taken verdeeld binnen de pagina's. Mijn taken zijn het maken van de profilecards en de hamburger menu, met de links naar de verschillende teams. 
+
+  Om de profilecards te bouwen heb ik het ontwerp aangehouden die we hebben geschetst tijdens de les van afgelopen maandag. We hebben er toen voor gekozen om de profilecards zo op te bouwen dat ze overeen komen met een Instagram post. Zo hebben we er dus voor gekozen om de namen van de studenten met zijn/haar studentnummer linksboven in te delen (zoals Instagram dat ook heeft maar dan met een kleine twist). Onder de "username" hebben we de avatar geplaatst en daaronder de mogelijkheid om de student een 'like' te geven.
+
+  Tijdens het bouwen van de hamburger menu heb ik ervoor gezorgd dat de linkjes in het menu als het ware onder de hamburger zitten en die tevoorschijn komen wanneer er op het icoontje wordt geklikt. De linkjes van het menu heb ik een z-index: 9 gegeven en het hamburger icoontje zelf heb ik een z-index: 10 gegeven zodat deze onder elkaar komen te staan.
+
+  https://github.com/saschavanvliet/connect-your-tribe-team-squad-page/blob/dcd6c8d82fd3696f2847a4618cb96716c37db328/public/squadpage.css#L7-L16
+
+  https://github.com/saschavanvliet/connect-your-tribe-team-squad-page/blob/dcd6c8d82fd3696f2847a4618cb96716c37db328/public/squadpage.css#L60-L66
+  
+
+  #### JSON data
+  Om de profilecards op te bouwen heb ik ervoor gekozen om zo veel mogelijk JSON data te gebruiken. Voor de 'username met studentnummer' en 'post' is JSON data gebruikt. 
+  https://github.com/saschavanvliet/connect-your-tribe-team-squad-page/blob/dcd6c8d82fd3696f2847a4618cb96716c37db328/views/squad1H.liquid#L25-L27
+  
+  Ook heb ik er voor gezorgd dat als een student geen avatar heeft dat er dan een placeholder image daarvoor in de plaats kwam. Dit heb ik gedaan met:
+  https://github.com/saschavanvliet/connect-your-tribe-team-squad-page/blob/dcd6c8d82fd3696f2847a4618cb96716c37db328/views/squad1H.liquid#L29-L40
+  
+  
+  
+
+  ### Sascha:
+
+  ### Sidney:
+
 ## Kenmerken
 
   ### Safae:
