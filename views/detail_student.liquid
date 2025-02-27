@@ -1,7 +1,13 @@
+{% render 'partials/head.liquid' %}
+
 <h2>{{ person.name }}</h2>
+
+<img src="https://github.com/{{ person.github_handle }}.png">
 
 <h3>{{ person.id }}</h3>
 
 <h4>{{ person.bio }}</h4>
 
-<p>hoi</p>
+<a class="back-button-container" href="/">Terug naar Squads</a>
+<a href="/squad1H/">Naar Squad H</a>
+<a href="/squad1G/">Naar Squad G</a>

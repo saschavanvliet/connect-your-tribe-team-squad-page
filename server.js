@@ -61,6 +61,12 @@ app.get('/teamleden/', async function (request, response) {
   // En daarvan haal ik de JSON op
   const personResponseJSON = await personResponse.json()
   response.render('teamleden.liquid', {persons: personResponseJSON.data})
+app.get('/detail/:id', async function (request, response) {
+  const studentDetailResponse = await fetch(API + request.params.id)
+  const studentDetailResponseJSON = await studentDetailResponse.json()
+  console.log(studentDetailResponseJSON)
+  
+  response.render('detail_student.liquid', {person: studentDetailResponseJSON.data})
 })
 
 app.post('/', async function (request, response) {
