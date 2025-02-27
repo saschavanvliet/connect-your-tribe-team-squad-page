@@ -32,7 +32,13 @@ Ontwerp en maak samen met je team een website met NodeJS, Express, JSON en Liqui
 
 
   #### Server.js
-  Om de pagina's te gebruiken en live te zetten moesten er nieuwe routes aangemaakt worden in de server. Dit is gedaan met 'app.get'
+  Om ervoor te zorgen dat de linkjes in de hamburger menu naar de juiste teams gaan heb ik een route aangemaakt naar de teams en teamleden pagina. Dit heb ik met de app.get functie gedaan om deze pagina te 'getten' en op te halen uit de database door de link uit directus te pakken naar alle teams.
+
+  https://github.com/saschavanvliet/connect-your-tribe-team-squad-page/blob/62dd33f231949a47fac9d705dfcd4ba0c54a26d7/server.js#L52-L64
+
+  Ook heb ik ervoor gezorgd dat de juiste teams uit de database worden gehaald wanneer er op een linkje wordt geklikt in het menu. Dit heb ik met fetch gedaan. Om /teams/:team te typen wordt zo het juiste team opgehaald uit de database. 
+
+  https://github.com/saschavanvliet/connect-your-tribe-team-squad-page/blob/62dd33f231949a47fac9d705dfcd4ba0c54a26d7/server.js#L89-L102
   
   
   
