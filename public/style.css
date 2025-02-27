@@ -4,40 +4,68 @@ body {
     grid-template-columns: 1fr 1fr; */
 }
 
+.squad-naam {
+    color: var(--primary-button-color);
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
 h2 {
     font-family: var(--font-family-website);
     display: flex;
     justify-content: center;
 }
 
+
 .card-container {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 1em;
+    gap: 20px; */
+    display: flex;
+    justify-content: center;
+    gap: 100px;
 }
 
 .squad-h, .squad-g {
     border:2px solid;
-    border-color: var(--border-color);
+    border-color: var(--primary-button-color);
     border-radius: 20px;
-    padding: 1em;       
-    background-color: white;
+    padding:0% ;      
+    background-color: var(--primary-color-black);
     width: 400px;
     height: 400px;
-
+    /* display:flex;
+    flex-direction: column;
+    align-items: center; */
 }
 
-.squad-g {
-    background-image: url(images/koop.avatar.jpg);
+.foto-koop{
+    background-image: url(./images/foto-koop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:0cap;
+    border: 2px solid #67E5BF;
+    width: 400px;
+    height: 280px;
 }
 
-.squad-h {
+.foto-krijn {
     background-image: url(images/krijn.avatar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:0cap;
+    border: 2px solid #67E5BF;
+    width: 400px;
+    height: 280px;
 }
 
 .hartje {
     background-color: transparent;
     border-color: transparent;
+    color: white;
 }
 
 .clicked svg {
@@ -62,4 +90,9 @@ h2 {
     padding: 1em;
 }
 
+@media (max-width:930px) {
+    .card-container {
+        display:grid;
+    }
 
+}
