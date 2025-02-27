@@ -105,17 +105,15 @@ header {
         img {
             left: 50%;
         }
+    }
 
-        .like-button-container {
-            border-top: 2px solid var(--primary-button-color);
-            margin-left: -1rem;
-            margin-right: -1rem;
+    .like-button-container {
+        border-top: 2px solid var(--primary-button-color);
+        margin-left: -1rem;
+        margin-right: -1rem;
 
-            .like-button {
-                padding-left: 1rem;
-                background: none;
-                border: none;
-            }
+        span {
+            color: var(--primary-color-white);
         }
     }
 }
@@ -123,6 +121,7 @@ header {
 .back-button-container {
     display: grid;
     place-items: center;
+
     margin-top: 20px;
 
     a {
