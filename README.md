@@ -5,8 +5,23 @@ Ontwerp en maak samen met je team een website met NodeJS, Express, JSON en Liqui
 
 ## Beschrijving
 
-  ### Safae:
+  ### Safae: 
 
+Voor deze opdracht heb ik de indexpagina gemaakt, waarop je twee cards kunt vinden. Met deze cards kun je kiezen welke squad je wilt bekijken. Daarnaast heb ik een like-button toegevoegd waarmee je een squad kunt liken. Wanneer je de like-button indrukt wordt het aantal likes verhoogd en verandert het hartje, zodat het duidelijk is dat je de squad hebt geliket.
+
+
+https://github.com/user-attachments/assets/d45fdb3c-d6ca-47d6-9c0d-70e7a6188a48
+
+Feedforward:
+
+Naast het hartje staat altijd een cijfer, beginnend bij 0. Dit geeft aan dat de button nog niet is geklikt, waardoor het duidelijk is dat de gebruiker de mogelijkheid heeft om de like uit te brengen door op de button te klikken.
+
+Feedback:
+
+Ik heb ervoor gekozen om het hartje volledig rood te maken nadat er op geklikt wordt, zodat het duidelijk zichtbaar is dat de knop geactiveerd is. Daarnaast wordt het cijfer naast het hartje automatisch verhoogd om het aantal keren dat er op de like-button is geklikt weer te geven.
+
+
+ 
   ### Renzo:
 
   #### Beschrijving werkzaamheden
