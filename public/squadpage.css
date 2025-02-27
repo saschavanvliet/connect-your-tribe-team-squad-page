@@ -54,7 +54,7 @@ header {
 }
 
 .menu ul li a:hover {
-    color: var(--primary-color-white);
+    color: var(--primary-button-color);
 }
 
 .hamburger-button {
@@ -84,17 +84,17 @@ header {
     justify-content: center;
     align-items: center;
 
-
     .profilecards {
-        border: 2px solid black;
+        border: 2px solid var(--primary-button-color);
         border-radius: 20px;        
         padding: 1em;
-        background-color: var(--primary-color-white);
+        background-color: var(--primary-color-black);
 
         p {
-            border-bottom: 2px solid black;
+            border-bottom: 2px solid var(--primary-button-color);
             margin-left: -1rem;
             margin-right: -1rem;
+            color: var(--primary-button-color);
 
         }
 
@@ -107,7 +107,7 @@ header {
         }
 
         .like-button-container {
-            border-top: 2px solid black;
+            border-top: 2px solid var(--primary-button-color);
             margin-left: -1rem;
             margin-right: -1rem;
 
