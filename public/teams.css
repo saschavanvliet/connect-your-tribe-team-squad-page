@@ -1,0 +1,30 @@
+.profilecards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+
+    .profilecards {
+        border: 2px solid var(--primary-button-color);
+        border-radius: 20px;
+        padding: 1em;
+        background-color: var(--primary-color-black);
+
+        p {
+            border-bottom: 2px solid var(--primary-button-color);
+            margin-left: -1rem;
+            margin-right: -1rem;
+            color: var(--primary-button-color);
+
+        }
+
+        .title {
+            padding-left: 1rem;
+        }
+
+        img {
+            left: 50%;
+        }
+    }
+}

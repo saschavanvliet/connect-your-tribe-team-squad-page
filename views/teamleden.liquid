@@ -1,9 +1,52 @@
 {% render 'partials/head.liquid' %}
 
-<h1> {{ team.name }}</h1>
 
-<ul>
+<h1> {{ team_name }}</h1>
+
+<button type="button" class="hamburger-button" id="hamburger-button">
+    &#9776;
+</button>
+
+<nav class="menu" id="menu">
+    <ul>
+        <li><a href="teams/Blaze">Blaze</a></li>
+        <li><a href="teams/Cool">Cool</a></li>
+        <li><a href="teams/Rad">Rad</a></li>
+        <li><a href="teams/Spirit">Spirit</a></li>
+        <li><a href="teams/Chill">Chill</a></li>
+        <li><a href="teams/Awesome">Awesome</a></li>
+    </ul>
+</nav>
+
+<div class="profilecards-container" id="profilecards">
   {% for person in persons %}
-    <li><img src="https://github.com/{{ person.github_handle }}.png"><a href="/detail/{{ person.id }}">{{ person.name }} {{ person.team }} </a></li>
-  {% endfor %}
-</ul>
+  <div class="profilecards">
+    <a href="/detail/{{ person.id }}">
+      <p><span class="title">{{ person.name }} {{ person.id }}</span></p>
+
+      <div class="img-container">
+        {% if person.avatar %}
+        <img src=" {{ person.avatar }} " alt="leeg" height="250px" width="200px"
+          style="border:10px solid {{person.fav_color}}">
+
+        {% if page.var.blank? %}
+        <img class="img-placeholder" src="/images/placeholder.jpg" alt="leeg" height="250px" width="200px"
+          style="border:10px solid {{person.fav_color}}">
+        {% endif %}
+
+        {% else %}
+        <img class="img-placeholder" src="/images/placeholder.jpg" alt="leeg" height="250px" width="200px"
+          style="border:10px solid {{person.fav_color}}">
+        {% endif %}
+      </div>
+    </a>
+  </div>
+{% endfor %}
+</div>
+
+<div class="back-button-container">
+  <a href="/">Terug naar home</a>
+</div>
+
+
+{% render 'partials/foot.liquid' %}
