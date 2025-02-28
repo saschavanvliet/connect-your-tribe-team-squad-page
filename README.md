@@ -34,6 +34,15 @@ Ik heb ervoor gekozen om het hartje volledig rood te maken nadat er op geklikt w
   https://github.com/saschavanvliet/connect-your-tribe-team-squad-page/blob/dcd6c8d82fd3696f2847a4618cb96716c37db328/public/squadpage.css#L7-L16
 
   https://github.com/saschavanvliet/connect-your-tribe-team-squad-page/blob/dcd6c8d82fd3696f2847a4618cb96716c37db328/public/squadpage.css#L60-L66
+
+  Ook heb ik hiervoor een interactie ontworpen. Wanneer er op het icoontje wordt geklikt 'schuift' het menu naar buiten, en kan weer naar binnen worden geschoven door overal op de pagina te klikken. Op mobiel schuift het menu over het hele scherm, op grotere schermen gebruikt het uitgeschoven menu 20% van het hele scherm.
+  
+
+Mobiele versie:
+
+
+Desktop versie:
+
   
 
   #### JSON data
@@ -54,6 +63,7 @@ Ik heb ervoor gekozen om het hartje volledig rood te maken nadat er op geklikt w
   Ook heb ik ervoor gezorgd dat de juiste teams uit de database worden gehaald wanneer er op een linkje wordt geklikt in het menu. Dit heb ik met fetch gedaan. Om /teams/:team te typen wordt zo het juiste team opgehaald uit de database. 
 
   https://github.com/saschavanvliet/connect-your-tribe-team-squad-page/blob/62dd33f231949a47fac9d705dfcd4ba0c54a26d7/server.js#L89-L102
+
   
   
   
