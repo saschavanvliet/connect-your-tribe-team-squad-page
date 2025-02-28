@@ -93,6 +93,12 @@ Ten slotte was het mijn taak om een filterfunctie te bouwen en te linken aan de 
 
   ### Sidney:
 
+  #### Server.js
+  in deze sprint zijn we bezig geweest met meer javascript, node, liquid en een meer data driven web te maken. Ik heb op onze server hard gewerkt om alle routes te laten werken zodat je er niet tegenaan loopt als je de site eenmaal gebruikt.
+
+  #### Routes
+  omdat ik bezig was met de server.JS was het ook vooral mijn taak om te richten dat de routes het deden. 
+
 ## Kenmerken
 
 ## Installatie
