@@ -41,7 +41,11 @@ Ik heb ervoor gekozen om het hartje volledig rood te maken nadat er op geklikt w
 Mobiele versie:
 
 
+
 Desktop versie:
+https://github.com/user-attachments/assets/39ce6e05-fd0b-4819-9221-aaa036913641
+
+
 
   
 
