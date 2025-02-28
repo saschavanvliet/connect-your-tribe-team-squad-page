@@ -80,6 +80,16 @@ https://github.com/saschavanvliet/connect-your-tribe-team-squad-page/blob/e51929
   
 
   ### Sascha:
+  Zoals eerder benoemd heb ik samen met Renzo ervoor gezorgd dat de squadpagina's in werking werden gesteld en de juiste styling hebben gekregen. Ik heb ben specifiek bezig geweest met het bouwen van een mooie styleguide, zorgen dat de naar de squadpagina's worden aangemaakt en ik heb geprobeerd een mooie filterfunctie te bouwen die ervoor zorgt dat je kan filteren van hoog naar laag en vice versa op naam en leeftijd.
+
+  #### Styleguide
+Een styleguide is een hele handige tool om je site zo consistent mogelijk te houden. De kleinste verschillen in pixelgroottes kan al heel storend eruitzien. 
+
+#### Server.js
+Ik heb twee linkjes op de indexpagina gemaakt die vervolgens leiden naar twee verschillende squadpage pagina's. Deze pagina's heb ik allebei aangemaakt in de server door gebruik te maken van GET. 
+
+#### Filterfunctie
+Ten slotte was het mijn taak om een filterfunctie te bouwen en te linken aan de dynamische code, maar dit was nog net iets te geavanceerd voor mij. Ik heb hem wel in css gemaakt.
 
   ### Sidney:
 
