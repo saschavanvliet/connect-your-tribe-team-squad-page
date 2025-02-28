@@ -49,18 +49,25 @@ app.get('/squad1G/', async function (request, response) {
   response.render('squad1G.liquid', {persons: personResponseJSON.data})
 })
 
-app.get('/teams/:team', async function (request, response) {
-  const personResponse = await fetch(API + 'https://fdnd.directus.app/items/person/?filter={"team":{"_contains":"' + request.params.team + '"}}')
+
+app.get('/squad1G/teams/:team', async function (request, response) {
+  const teamResponse = await fetch(API + '?filter={"team":{"_contains":"' + request.params.team + '"}}')
   // En daarvan haal ik de JSON op
-  const personResponseJSON = await personResponse.json()
-  response.render('teams.liquid', {persons: personResponseJSON.data})
+  const teamResponseJSON = await teamResponse.json()
+  console.log(teamResponseJSON)
+
+  response.render('teamleden.liquid', {persons: teamResponseJSON.data, team_name: request.params.team})
 })
 
-app.get('/teamleden/', async function (request, response) {
-  const personResponse = await fetch(API + 'https://fdnd.directus.app/items/person/?filter={"team":{"_contains":"' + request.params.team + '"}}')
+app.get('/squad1H/teams/:team', async function (request, response) {
+  const teamResponse = await fetch(API + '?filter={"team":{"_contains":"' + request.params.team + '"}}')
   // En daarvan haal ik de JSON op
-  const personResponseJSON = await personResponse.json()
-  response.render('teamleden.liquid', {persons: personResponseJSON.data})
+  const teamResponseJSON = await teamResponse.json()
+  console.log(teamResponseJSON)
+
+  response.render('teamleden.liquid', {persons: teamResponseJSON.data, team_name: request.params.team})
+})
+
 app.get('/detail/:id', async function (request, response) {
   const studentDetailResponse = await fetch(API + request.params.id)
   const studentDetailResponseJSON = await studentDetailResponse.json()
