@@ -36,14 +36,21 @@ Ik heb ervoor gekozen om het hartje volledig rood te maken nadat er op geklikt w
   https://github.com/saschavanvliet/connect-your-tribe-team-squad-page/blob/dcd6c8d82fd3696f2847a4618cb96716c37db328/public/squadpage.css#L60-L66
 
   Ook heb ik hiervoor een interactie ontworpen. Wanneer er op het icoontje wordt geklikt 'schuift' het menu naar buiten, en kan weer naar binnen worden geschoven door overal op de pagina te klikken. Op mobiel schuift het menu over het hele scherm, op grotere schermen gebruikt het uitgeschoven menu 20% van het hele scherm.
+
+  https://github.com/saschavanvliet/connect-your-tribe-team-squad-page/blob/e5192919a227ec6ddfd8a360e3b45a7a49900901/public/main.js#L1-L18
   
 
 Mobiele versie:
+https://github.com/user-attachments/assets/b793b8ee-d909-4d87-bde7-22f5f051110a
+
 
 
 
 Desktop versie:
 https://github.com/user-attachments/assets/39ce6e05-fd0b-4819-9221-aaa036913641
+
+Voor de desktop versie heb ik met een media query gewerkt en deze een (min-width) gegeven.
+https://github.com/saschavanvliet/connect-your-tribe-team-squad-page/blob/e5192919a227ec6ddfd8a360e3b45a7a49900901/public/squadpage.css#L21-L23
 
 
 
@@ -77,14 +84,6 @@ https://github.com/user-attachments/assets/39ce6e05-fd0b-4819-9221-aaa036913641
   ### Sidney:
 
 ## Kenmerken
-
-  ### Safae:
-
-  ### Renzo:
-
-  ### Sascha:
-
-  ### Sidney:
 
 ## Installatie
 In ons project hebben nu gewerkt met nieuwe concepten. We hebben gewerkt met: Node, NPM, Express, Liquid en Render.
